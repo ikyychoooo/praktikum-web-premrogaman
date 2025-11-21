@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Klinik Sehat</title>
+</head>
+<body>
+
+<h2>Formulir Pendaftaran Pasien Klinik Sehat</h2>
+
+<form action="Formulir_kliniksehat.html" method="post">
+
+    <label>Nama Pasien:</label>
+    <input type="text" name="nama" required>
+    <br><br>
+
+    <label>Umur:</label>
+    <input type="number" name="umur" min="1" max="120" required>
+    <br><br>
+
+    <label>Jenis Kelamin:</label><br>
+    <input type="radio" name="jk" value="laki-laki"> Laki-laki<br>
+    <input type="radio" name="jk" value="perempuan"> Perempuan
+    <br><br>
+
+    <label>Keluhan:</label><br>
+    <textarea name="keluhan" rows="5" cols="40"></textarea>
+    <br><br>
+
+    <label>Metode Pembayaran:</label><br>
+    <select name="pembayaran">
+        <option value="bpjs">BPJS</option>
+        <option value="tunai">Tunai</option>
+        <option value="non-tunai">Non-Tunai</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Kirim Form">
+
+</form>
+
+</body>
+</html>
